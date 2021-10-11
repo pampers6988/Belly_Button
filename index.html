@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="container" style = "background-color:#c3c0ec">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style = "background-image: url(https://thumbs.dreamstime.com/b/futuristic-glowing-low-polygonal-abstract-background-bacilli-bacteria-flu-virus-cells-under-microscope-dark-blue-158916752.jpg);
+      background-size:cover">
+        <h1 class="panel-title" style="color:rgb(231, 219, 109)">Belly Button Biodiversity Dashboard</h1>
+        <h2 class="panel-title" style="color:rgb(231, 219, 109)" >Use the interactive charts below to explore the dataset</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well"style ="background-color:RebeccaPurple">
+          <h5 class="panel-title" style="color: whitesmoke">Test Subject ID No:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary"style = "color: darkblue">
+          <div class="panel-heading" style="background-color:RebeccaPurple">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Required dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./js/charts.js"></script>
+  
+
+</body>
+
+</html>
